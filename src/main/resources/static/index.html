@@ -11,6 +11,18 @@
 
 <h2>Membri</h2>
 
+<div class="form-card">
+  <h3>Adaugă membru nou</h3>
+
+  <input type="text" id="firstName" placeholder="Prenume">
+  <input type="text" id="lastName" placeholder="Nume">
+  <input type="text" id="phone" placeholder="Telefon">
+  <input type="email" id="email" placeholder="Email">
+  <input type="text" id="membershipType" placeholder="Tip abonament">
+
+  <button onclick="addMember()">Adaugă membru</button>
+</div>
+
 <button onclick="loadMembers()">Afiseaza Membri</button>
 
 <div id="members"></div>
@@ -18,25 +30,71 @@
 <hr>
 
 <h2>Traineri</h2>
+
+<div class="form-card">
+  <h3>Adaugă antrenor nou</h3>
+
+  <input type="text" id="trainerFirstName" placeholder="Prenume">
+  <input type="text" id="trainerLastName" placeholder="Nume">
+  <input type="text" id="trainerSpecialization" placeholder="Specializare">
+  <input type="text" id="trainerPhone" placeholder="Telefon">
+
+  <button onclick="addTrainer()">Adaugă antrenor</button>
+</div>
+
 <button onclick="loadTrainers()">Afiseaza Traineri</button>
 <div id="trainers"></div>
 
 <hr>
 
 <h2>Clase Fitness</h2>
+
+<div class="form-card">
+  <h3>Adaugă clasă fitness nouă</h3>
+
+  <input type="text" id="className" placeholder="Nume clasă">
+  <input type="text" id="classSchedule" placeholder="Program">
+  <input type="number" id="classTrainerId" placeholder="ID Trainer">
+
+  <button onclick="addClass()">Adaugă clasă</button>
+</div>
+
 <button onclick="loadClasses()">Afiseaza Clase</button>
 <div id="classes"></div>
 
 <hr>
 
 <h2>Abonamente</h2>
+
+<div class="form-card">
+  <h3>Adaugă abonament nou</h3>
+
+  <input type="date" id="membershipStartDate">
+  <input type="date" id="membershipEndDate">
+  <input type="number" id="membershipPrice" placeholder="Preț">
+  <input type="number" id="membershipMemberId" placeholder="ID Membru">
+
+  <button onclick="addMembership()">Adaugă abonament</button>
+</div>
+
 <button onclick="loadMemberships()">Afiseaza Abonamente</button>
 <div id="memberships"></div>
 
 <hr>
 
-<h2>Plati</h2>
-<button onclick="loadPayments()">Afiseaza Plati</button>
+<h2>Plăți</h2>
+
+<div class="form-card">
+  <h3>Adaugă plată nouă</h3>
+
+  <input type="number" id="paymentAmount" placeholder="Sumă">
+  <input type="date" id="paymentDate">
+  <input type="number" id="paymentMemberId" placeholder="ID Membru">
+
+  <button onclick="addPayment()">Adaugă plată</button>
+</div>
+
+<button onclick="loadPayments()">Afiseaza Plăți</button>
 <div id="payments"></div>
 
 <script src="script.js"></script>
